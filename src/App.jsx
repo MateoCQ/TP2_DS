@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import  { PasswordInput } from "./components/PasswordInput.jsx";
-import "./App.css";
+import { useState } from 'react'
+import  { PasswordInput } from "./components/PasswordInput.jsx"
+import "./App.css"
 function App() {
 
   return (
