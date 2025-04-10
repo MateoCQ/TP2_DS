@@ -22,7 +22,7 @@ export function CopyPassword({password}){
             </button>
 
             {showNotification && (
-                <div className="Notification">
+                <div className="notification">
                     <p>
                         ¡Contraseña copiada al portapapeles!
                     </p>

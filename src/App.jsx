@@ -5,7 +5,8 @@ function App() {
 
   return (
     <div className='App'>
-    <PasswordInput />
+      <h1>Password Tester</h1>
+      <PasswordInput />
     </div>
   );
 }

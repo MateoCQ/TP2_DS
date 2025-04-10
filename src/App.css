@@ -1,0 +1,60 @@
+.App {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.Input_Container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+.Button_Container {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    height: 20px;
+}
+
+.Items {
+    display: flex;
+    flex-direction: column;
+}
+
+.poco-segura {
+    color: rgb(255, 69, 69)
+}
+
+.segura {
+    color: yellow;
+}
+
+.muy-segura {
+    color: rgb(0, 237, 0);
+}
+
+.notification {
+    position: absolute;
+    text-align: center;
+    left: 42%;
+    top: 52%;
+    background-color: #333;
+    width: 250px;
+    border-radius: 6px;
+}

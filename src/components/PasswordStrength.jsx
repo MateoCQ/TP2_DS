@@ -34,7 +34,7 @@ export function PasswordStrength({password}){
                 break
             case 3:
             case 4:
-                setStrength("Muy segura")
+                setStrength("Muy Segura")
                 break
             default:
                 setStrength("")

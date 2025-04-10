@@ -9,15 +9,18 @@ export function PasswordInput(){
         const [showPassword, setShowPassword] = useState(false)
 
 return(
-    <div className="Input_Container">
-        <input type={showPassword ? "text": "password"} value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Ingrese una contraseña"/>
+    <div className="Items">
+        <div className="Input_Container">
+            <input type={showPassword ? "text": "password"} value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Ingrese una contraseña"/>
         
-        <div className="Button_Container">
-            <button onClick={() => setShowPassword(!showPassword)}>
-                {showPassword ? <EyeOff size={20}/> : <Eye size={20}/>} 
-            </button>
+                <div className="Button_Container">
+                    <button onClick={() => setShowPassword(!showPassword)}>
+                        {showPassword ? <EyeOff size={20}/> : <Eye size={20}/>} 
+                    </button>
 
-            <CopyPassword password={password}/>
+                    <CopyPassword password={password}/>
+                </div>
+        
         </div>
         <PasswordStrength password={password} />
     </div>
