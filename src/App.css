@@ -1,60 +1,158 @@
-.App {
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    font-weight: bold;
     flex-direction: column;
-}
-
-.Input_Container {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    padding-bottom: 10px;
-}
-
-.Button_Container {
+    gap: 30px;
+  }
+  
+  h1 {
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Items {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .Input_Container {
     display: flex;
-    flex-direction: row;
-}
-
-button {
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  
+  .Input_Container input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .Button_Container {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .Button_Container button {
+    background: none;
+    border: none;
     cursor: pointer;
-}
-
-input {
-    height: 20px;
-}
-
-.Items {
-    display: flex;
-    flex-direction: column;
-}
-
-.poco-segura {
-    color: rgb(255, 69, 69)
-}
-
-.segura {
-    color: yellow;
-}
-
-.muy-segura {
-    color: rgb(0, 237, 0);
-}
-
-.notification {
-    position: absolute;
+    padding: 8px;
+    border-radius: 4px;
+    color: #555;
+  }
+  
+  .Button_Container button:hover {
+    background-color: #eee;
+  }
+  
+  .Generator {
+    margin-top: 15px;
     text-align: center;
-    left: 42%;
-    top: 60%;
-    background-color: #555;
-    width: 250px;
+  }
+  
+  .Generator button {
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .Generator button:hover {
+    background-color: #0056b3;
+  }
+  
+  .Advanced {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .Advanced h3 {
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .Container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Container label {
+    flex-basis: 150px;
+    color: #555;
+  }
+  
+  .Container input[type="number"],
+  .Container input[type="checkbox"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .password-strength {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .password-strength.poco-segura {
+    background-color: #ffe0b2; /* Light orange */
+    color: #e65100; /* Dark orange */
+  }
+  
+  .password-strength.segura {
+    background-color: #c8e6c9; /* Light green */
+    color: #1b5e20; /* Dark green */
+  }
+  
+  .password-strength.muy-segura {
+    background-color: #b3e5fc; /* Light blue */
+    color: #0277bd; /* Dark blue */
+  }
+  
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
     border-radius: 6px;
-}
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    z-index: 1000;
+  }
+  
+  .notification p {
+    margin: 0;
+  }

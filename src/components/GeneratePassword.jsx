@@ -71,7 +71,7 @@ export function PasswordGenerator() {
       {showAdvancedPanel && (
         <div className="Advanced">
           <h3>Configuración Avanzada</h3>
-          <div className="Container_Fila">
+          <div className="Container">
             <label>Largo:</label>
             <input
               type="number"
@@ -80,7 +80,7 @@ export function PasswordGenerator() {
               min="1"
             />
           </div>
-          <div className="Container_Fila">
+          <div className="Container">
             <label>Incluir minúsculas:</label>
             <input
               type="checkbox"
@@ -88,7 +88,7 @@ export function PasswordGenerator() {
               onChange={(e) => setIncludeLower(e.target.checked)}
             />
           </div>
-          <div className="Container_Fila">
+          <div className="Container">
             <label>Incluir mayúsculas:</label>
             <input
               type="checkbox"
@@ -96,7 +96,7 @@ export function PasswordGenerator() {
               onChange={(e) => setIncludeUpper(e.target.checked)}
             />
           </div>
-          <div className="Container_Fila">
+          <div className="Container">
             <label>Incluir números:</label>
             <input
               type="checkbox"
@@ -104,7 +104,7 @@ export function PasswordGenerator() {
               onChange={(e) => setIncludeNumbers(e.target.checked)}
             />
           </div>
-          <div className="Container_Fila">
+          <div className="Container">
             <label>Incluir símbolos:</label>
             <input
               type="checkbox"
